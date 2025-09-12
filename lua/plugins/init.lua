@@ -339,4 +339,12 @@ return {
           { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
         },
     },
+    {
+        "MeanderingProgrammer/render-markdown.nvim",
+        lazy = false,
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+        ---@module 'render-markdown'
+        ---@type render.md.UserConfig
+        opts = {},
+    },
 }

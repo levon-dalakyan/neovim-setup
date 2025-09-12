@@ -69,3 +69,22 @@ require "nvchad.autocmds"
 vim.schedule(function()
     require "mappings"
 end)
+
+-- Re-apply comment color every 100ms for the first 5 seconds
+local timer = vim.loop.new_timer()
+local count = 0
+
+timer:start(
+    100,
+    100,
+    vim.schedule_wrap(function()
+        vim.api.nvim_set_hl(0, "Comment", { fg = "#999999" })
+        vim.api.nvim_set_hl(0, "@comment", { fg = "#999999" })
+        count = count + 1
+        if count > 50 then
+            timer:stop()
+            timer:close()
+            print "Stopped auto-overwrite for Comment highlight"
+        end
+    end)
+)
