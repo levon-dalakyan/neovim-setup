@@ -90,4 +90,4 @@ timer:start(
 )
 
 -- Customize visual mode selection highlight
-vim.api.nvim_set_hl(0, "Visual", { bg = "#3e3e4d" })
+vim.api.nvim_set_hl(0, "Visual", { bg = "#3e3e4f" })
