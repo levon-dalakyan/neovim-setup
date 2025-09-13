@@ -94,3 +94,6 @@ vim.api.nvim_set_hl(0, "Visual", { bg = "#3e3e4f" })
 
 -- Border around vim.lsp.buf.hover()
 vim.o.winborder = "single" -- or 'single', 'double', 'solid'
+
+-- Set color for line numbers (absolute)
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#656565" }) -- Green text color for line numbers
