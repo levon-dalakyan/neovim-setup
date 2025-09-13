@@ -91,3 +91,6 @@ timer:start(
 
 -- Customize visual mode selection highlight
 vim.api.nvim_set_hl(0, "Visual", { bg = "#3e3e4f" })
+
+-- Border around vim.lsp.buf.hover()
+vim.o.winborder = "single" -- or 'single', 'double', 'solid'
