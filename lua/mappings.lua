@@ -9,8 +9,8 @@ vim.api.nvim_set_keymap("n", "<C-w><C-;>", ":resize -5<CR>", { noremap = true, s
 vim.api.nvim_set_keymap("n", "<C-w><C-.>", ":vertical resize +15<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-w><C-,>", ":vertical resize -15<CR>", { noremap = true, silent = true })
 
--- Changes to fit vim keybindings
-map("n", "s", "cl", { noremap = true })
+vim.api.nvim_set_keymap("n", "<S-left>", "<S-Tab>", { noremap = false, silent = true })
+vim.api.nvim_set_keymap("n", "<S-right>", "<Tab>", { noremap = false, silent = true })
 
 -- NvChad copied mappings
 map("i", "jk", "<ESC>")

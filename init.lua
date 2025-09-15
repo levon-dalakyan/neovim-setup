@@ -97,3 +97,6 @@ vim.o.winborder = "single" -- or 'single', 'double', 'solid'
 
 -- Set color for line numbers (absolute)
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#656565" }) -- Green text color for line numbers
+
+-- Set color of separators between windows
+vim.cmd [[highlight WinSeparator guifg=#aaaaaa guibg=NONE]]
