@@ -347,4 +347,9 @@ return {
         ---@type render.md.UserConfig
         opts = {},
     },
+    {
+        "BranimirE/fix-auto-scroll.nvim",
+        config = true,
+        event = "VeryLazy",
+    },
 }
