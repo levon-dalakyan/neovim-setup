@@ -13,6 +13,7 @@ local options = {
         c = { "clang_format" },
         cpp = { "clang_format" },
         sql = { "pg_format" },
+        proto = { "buf" },
     },
 
     formatters = {
