@@ -11,6 +11,8 @@ vim.api.nvim_set_keymap("n", "<C-w><C-,>", ":vertical resize -15<CR>", { noremap
 
 vim.api.nvim_set_keymap("n", "<S-left>", "<S-Tab>", { noremap = false, silent = true })
 vim.api.nvim_set_keymap("n", "<S-right>", "<Tab>", { noremap = false, silent = true })
+vim.api.nvim_set_keymap("i", "<S-left>", "<S-Tab>", { noremap = false, silent = true })
+vim.api.nvim_set_keymap("i", "<S-right>", "<Tab>", { noremap = false, silent = true })
 
 -- NvChad copied mappings
 map("i", "jk", "<ESC>")
