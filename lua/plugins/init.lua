@@ -340,14 +340,6 @@ return {
         },
     },
     {
-        "MeanderingProgrammer/render-markdown.nvim",
-        lazy = false,
-        dependencies = { "nvim-treesitter/nvim-treesitter" },
-        ---@module 'render-markdown'
-        ---@type render.md.UserConfig
-        opts = {},
-    },
-    {
         "BranimirE/fix-auto-scroll.nvim",
         config = true,
         event = "VeryLazy",

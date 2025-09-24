@@ -138,6 +138,3 @@ vim.keymap.set("n", "gto", "<cmd>:GoTestAdd<cr>", { desc = "Go Test Add" })
 
 -- Grug
 vim.keymap.set("n", "<leader>gf", "<cmd>:GrugFar<cr>", { desc = "GrugFar" })
-
--- Markdown
-vim.keymap.set("n", "<leader>rmt", "<cmd>:RenderMarkdown toggle<cr>", { desc = "RenderMarkdown toggle" })
